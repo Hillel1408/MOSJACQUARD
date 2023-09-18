@@ -140,7 +140,7 @@ h6 {
 
 .intro {
   height: 1100px;
-  background-image: url("../../img/bg.png");
+  background-image: url("../img/bg.png");
 }
 .intro__container {
   display: -webkit-box;
