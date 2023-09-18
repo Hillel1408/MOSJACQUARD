@@ -10,6 +10,11 @@
       display: flex;
       justify-content: space-between;
     }
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
   }
   img {
     width: 724px;
@@ -34,6 +39,13 @@
       font-size: 18px;
       line-height: 22px;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      img {
+        width: 38px;
+      }
     }
   }
 }
