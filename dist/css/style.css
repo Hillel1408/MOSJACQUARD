@@ -141,6 +141,9 @@ h6 {
 .intro {
   height: 1100px;
   background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .intro__container {
   display: -webkit-box;
@@ -218,15 +221,40 @@ h6 {
 .footer {
   background-color: black;
 }
+.footer__image {
+  max-width: 300px;
+}
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto 1fr auto;
+  grid-template-columns: 1fr auto 1fr auto;
+  gap: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 135px;
   padding-bottom: 135px;
+}
+@media (max-width: 1024px) {
+  .footer__container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .footer__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer__container > div {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .footer__container > div:nth-child(2) {
   display: -webkit-box;
@@ -239,6 +267,15 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 640px) {
+  .footer__container > div:nth-child(2) {
+    gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .footer__container > div:last-child {
   display: -webkit-box;
@@ -251,6 +288,19 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .footer__container > div:last-child {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+}
+@media (max-width: 640px) {
+  .footer__container > div:last-child {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    gap: 30px;
+  }
 }
 .footer__container h2 {
   color: white;
@@ -313,6 +363,26 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
+}
+@media (max-width: 640px) {
+  .footer__contacts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__btn {
+    display: none;
+  }
+}
+.footer__mobile-btn {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .footer__mobile-btn {
+    display: block;
+  }
 }
 
 .about-us {
