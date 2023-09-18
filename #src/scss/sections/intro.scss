@@ -1,18 +1,22 @@
-.intro{
+.intro {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 724px;
+  }
+  &__image {
+    padding-top: 65px;
+  }
+  ul {
     display: flex;
-    img{
-        width: 724px;
-    }
-    &__image{
-        padding-top: 65px;
-    }
-    ul{
-        li{
-            a{
-                svg{
-                    width: 32px;
-                }
-            }
+    gap: 10px;
+    padding-top: 15px;
+    li {
+      a {
+        svg {
+          width: 32px;
         }
+      }
     }
+  }
 }

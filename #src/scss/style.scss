@@ -1,11 +1,23 @@
-@import 'fonts';
-@import 'null';
+@import "fonts";
+@import "null";
 
 .container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: #e5007e;
+  width: 266px;
+  height: 52px;
+  border-radius: 30px;
+  color: white;
 }
 
-@import './sections/header';
-@import './sections/intro';
+@import "./sections/header";
+@import "./sections/intro";
+@import "./sections/footer";
