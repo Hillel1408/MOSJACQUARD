@@ -1,0 +1,18 @@
+.intro{
+    display: flex;
+    img{
+        width: 724px;
+    }
+    &__image{
+        padding-top: 65px;
+    }
+    ul{
+        li{
+            a{
+                svg{
+                    width: 32px;
+                }
+            }
+        }
+    }
+}

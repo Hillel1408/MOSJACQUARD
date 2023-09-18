@@ -1,0 +1,14 @@
+.header{
+    padding-top: 38px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            font-size: 20px;
+            line-height: 24px;
+            a{
+                color: black;
+            }
+        }
+    }
+}
