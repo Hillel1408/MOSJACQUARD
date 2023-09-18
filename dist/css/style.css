@@ -110,8 +110,17 @@ h6 {
   color: white;
 }
 
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .header {
   padding-top: 38px;
+  padding-bottom: 50px;
 }
 .header ul {
   display: -webkit-box;
@@ -130,6 +139,23 @@ h6 {
 }
 
 .intro {
+  height: 1100px;
+  background-image: url("../../img/bg.png");
+}
+.intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+.intro__container > div:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,18 +166,29 @@ h6 {
 .intro img {
   width: 724px;
 }
-.intro__image {
-  padding-top: 65px;
-}
-.intro ul {
+.intro__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
   padding-top: 15px;
 }
-.intro ul li a svg {
+.intro__icons li a svg {
   width: 32px;
+}
+.intro__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
+}
+.intro__list li {
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
 }
 
 .footer {
@@ -251,4 +288,54 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
+}
+
+.about-us {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.about-us__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  font-size: 20px;
+  line-height: 170%;
+}
+.about-us__title {
+  margin-bottom: 55px;
+}
+
+.advantages {
+  padding-top: 70px;
+}
+.advantages__title {
+  margin-bottom: 55px;
+}
+.advantages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.advantages ul li {
+  position: relative;
+}
+.advantages ul li img {
+  width: 87px;
+}
+.advantages ul li span {
+  position: absolute;
+  font-size: 25px;
+  line-height: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 30px;
 }

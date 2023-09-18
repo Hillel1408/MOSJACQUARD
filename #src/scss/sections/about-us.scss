@@ -1,0 +1,14 @@
+.about-us {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+    line-height: 170%;
+  }
+  &__title {
+    margin-bottom: 55px;
+  }
+}

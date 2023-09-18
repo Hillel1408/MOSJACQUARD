@@ -17,7 +17,16 @@
   border-radius: 30px;
   color: white;
 }
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 @import "./sections/header";
 @import "./sections/intro";
 @import "./sections/footer";
+@import "./sections/about-us";
+@import "./sections/advantages";
