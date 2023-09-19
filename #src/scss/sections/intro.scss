@@ -3,7 +3,10 @@
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: unset;
+  @media (max-width: 1700px) {
+    background-position: center;
+  }
   @media (max-width: 640px) {
     height: 800px;
     background-color: black;
