@@ -74,8 +74,21 @@
     align-items: center;
     gap: 10px;
     color: white;
+    transition: 0.3s;
     svg {
       width: 20px;
+      fill: white;
+      path {
+        transition: 0.3s;
+      }
+    }
+    &:hover {
+      color: #e5007e;
+      svg {
+        path {
+          fill: #e5007e;
+        }
+      }
     }
   }
   &__text {
@@ -86,6 +99,7 @@
     color: white;
     svg {
       width: 15px;
+      fill: white;
     }
   }
   &__contacts {

@@ -108,6 +108,11 @@ h6 {
   height: 52px;
   border-radius: 30px;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #7e134e;
 }
 
 .title {
@@ -138,6 +143,11 @@ h6 {
 }
 .header ul li a {
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header ul li a:hover {
+  color: #e5007e;
 }
 .header > div button {
   display: none;
@@ -244,6 +254,9 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .intro__image {
   width: 724px;
@@ -479,9 +492,22 @@ h6 {
           align-items: center;
   gap: 10px;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .footer__tel svg {
   width: 20px;
+  fill: white;
+}
+.footer__tel svg path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer__tel:hover {
+  color: #e5007e;
+}
+.footer__tel:hover svg path {
+  fill: #e5007e;
 }
 .footer__text {
   display: -webkit-box;
@@ -494,6 +520,7 @@ h6 {
 }
 .footer__text svg {
   width: 15px;
+  fill: white;
 }
 .footer__contacts {
   display: -webkit-box;
@@ -561,9 +588,13 @@ h6 {
 }
 .advantages ul li {
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.advantages ul li img {
+.advantages ul li svg {
   width: 87px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .advantages ul li span {
   position: absolute;
@@ -574,4 +605,10 @@ h6 {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 30px;
+}
+.advantages ul li:hover {
+  color: #e5007e;
+}
+.advantages ul li:hover svg {
+  fill: #e5007e;
 }

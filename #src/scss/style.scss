@@ -16,6 +16,10 @@
   height: 52px;
   border-radius: 30px;
   color: white;
+  transition: 0.3s;
+  &:hover {
+    background-color: #7e134e;
+  }
 }
 .title {
   font-weight: 500;
