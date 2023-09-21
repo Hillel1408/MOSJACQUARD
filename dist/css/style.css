@@ -148,6 +148,7 @@ h6 {
 }
 .header ul li a:hover {
   color: #e5007e;
+  text-decoration: underline;
 }
 .header > div button {
   display: none;
@@ -208,7 +209,7 @@ h6 {
 }
 @media (max-width: 640px) {
   .intro {
-    height: 800px;
+    height: 1000px;
     background-color: black;
   }
 }
@@ -258,6 +259,13 @@ h6 {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media (max-width: 640px) {
+  .intro__container > div:nth-child(2) {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .intro__image {
   width: 724px;
 }
@@ -295,13 +303,23 @@ h6 {
     margin-left: auto;
   }
 }
+@media (max-width: 640px) {
+  .intro__icons {
+    gap: 20px;
+  }
+}
 .intro__icons li a svg {
   width: 32px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (max-width: 640px) {
   .intro__icons li a svg {
     fill: white;
   }
+}
+.intro__icons li a:hover svg {
+  fill: #e5007e;
 }
 .intro__icons li:last-child {
   width: 30px;
@@ -349,10 +367,15 @@ h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.intro__list li {
-  font-size: 18px;
-  line-height: 22px;
-  color: white;
+@media (max-width: 640px) {
+  .intro__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.intro__list li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,9 +390,23 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.intro__list li img {
+.intro__list li svg {
+  fill: white;
   width: 38px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.intro__list li:hover a {
+  color: #e5007e;
+}
+.intro__list li:hover svg {
+  fill: #e5007e;
 }
 
 .footer {
@@ -401,6 +438,8 @@ h6 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 30px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
   .footer__container > div {
     width: -webkit-fit-content;
@@ -551,6 +590,20 @@ h6 {
   .footer__mobile-btn {
     display: block;
   }
+}
+.footer a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer a svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer a:hover {
+  color: #e5007e;
+}
+.footer a:hover svg {
+  fill: #e5007e;
 }
 
 .about-us {

@@ -21,6 +21,8 @@
         margin: 0 auto;
         text-align: center;
       }
+      padding-top: 55px;
+      padding-bottom: 55px;
     }
     & > div:nth-child(2) {
       display: flex;
@@ -119,6 +121,18 @@
     display: none;
     @media (max-width: 1024px) {
       display: block;
+    }
+  }
+  a {
+    transition: 0.3s;
+    svg {
+      transition: 0.3s;
+    }
+    &:hover {
+      color: #e5007e;
+      svg {
+        fill: #e5007e;
+      }
     }
   }
 }
