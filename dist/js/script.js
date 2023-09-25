@@ -10,3 +10,11 @@ close.addEventListener("click", () => {
   header.classList.remove("active");
   document.body.style.overflow = "initial";
 });
+
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

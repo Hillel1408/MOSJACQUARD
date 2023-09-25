@@ -1,15 +1,10 @@
 .intro {
-  height: 1100px;
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: unset;
   @media (max-width: 1700px) {
     background-position: center;
-  }
-  @media (max-width: 640px) {
-    height: 1000px;
-    background-color: black;
   }
   &__container {
     display: flex;
@@ -25,7 +20,21 @@
         gap: 30px;
       }
     }
+    @media (max-width: 1024px) {
+      gap: 60px;
+    }
+    @media (max-width: 640px) {
+      background-color: black;
+    }
     & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+        gap: 60px;
+      }
+    }
+    & > div:nth-child(2) > div:first-child {
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -144,5 +153,26 @@
         }
       }
     }
+  }
+}
+.swiper {
+  width: 850px;
+  padding: 0 20px;
+  margin-right: initial;
+  padding-top: 180px;
+  @media (max-width: 1024px) {
+    margin-left: initial;
+    padding-top: 100px;
+    width: 100%;
+  }
+  &-button-prev,
+  &-button-next {
+    color: white;
+    &:after {
+      font-size: 30px;
+    }
+  }
+  img {
+    width: 100%;
   }
 }

@@ -193,11 +193,11 @@ h6 {
 .header.active {
   opacity: 1;
   visibility: visible;
+  z-index: 10;
 }
 
 .intro {
-  height: 1100px;
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: unset;
@@ -205,12 +205,6 @@ h6 {
 @media (max-width: 1700px) {
   .intro {
     background-position: center;
-  }
-}
-@media (max-width: 640px) {
-  .intro {
-    height: 1000px;
-    background-color: black;
   }
 }
 .intro__container {
@@ -246,7 +240,34 @@ h6 {
     gap: 30px;
   }
 }
+@media (max-width: 1024px) {
+  .intro__container {
+    gap: 60px;
+  }
+}
+@media (max-width: 640px) {
+  .intro__container {
+    background-color: black;
+  }
+}
 .intro__container > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1024px) {
+  .intro__container > div:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 60px;
+  }
+}
+.intro__container > div:nth-child(2) > div:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,7 +281,7 @@ h6 {
           align-items: baseline;
 }
 @media (max-width: 640px) {
-  .intro__container > div:nth-child(2) {
+  .intro__container > div:nth-child(2) > div:first-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -409,6 +430,29 @@ h6 {
   fill: #e5007e;
 }
 
+.swiper {
+  width: 850px;
+  padding: 0 20px;
+  margin-right: initial;
+  padding-top: 180px;
+}
+@media (max-width: 1024px) {
+  .swiper {
+    margin-left: initial;
+    padding-top: 100px;
+    width: 100%;
+  }
+}
+.swiper-button-prev, .swiper-button-next {
+  color: white;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 30px;
+}
+.swiper img {
+  width: 100%;
+}
+
 .footer {
   background-color: black;
 }
@@ -531,6 +575,7 @@ h6 {
           align-items: center;
   gap: 10px;
   color: white;
+  white-space: nowrap;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
