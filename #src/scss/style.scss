@@ -12,13 +12,16 @@
   font-size: 20px;
   line-height: 20px;
   background-color: #e5007e;
-  width: 266px;
+  padding: 0 40px;
   height: 52px;
   border-radius: 30px;
   color: white;
   transition: 0.3s;
   &:hover {
     background-color: #7e134e;
+  }
+  @media (max-width: 640px) {
+    font-size: 14px;
   }
 }
 .title {
@@ -34,3 +37,4 @@
 @import "./sections/footer";
 @import "./sections/about-us";
 @import "./sections/advantages";
+@import "./pages/products-intro";
