@@ -1,0 +1,104 @@
+.personal-account {
+  &__header {
+    background-color: black;
+    ul {
+      li {
+        a {
+          color: white;
+          @media (max-width: 1024px) {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  &__tel {
+    margin-bottom: 15px;
+  }
+  &__icons {
+    a {
+      svg {
+        fill: white;
+      }
+    }
+  }
+  &__container {
+    @media (max-width: 640px) {
+      background-color: initial;
+    }
+  }
+  &-intro {
+    background-image: url("../img/bg-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+    @media (max-width: 1700px) {
+      background-position: center;
+    }
+  }
+  &__content {
+    min-height: 600px;
+    margin-top: 300px;
+    h1 {
+      font-size: 25px;
+      line-height: 35px;
+      text-transform: uppercase;
+      text-align: right;
+      transform: translateY(-150px);
+      margin-right: 150px;
+      @media (max-width: 640px) {
+        margin-right: 0;
+        text-align: left;
+      }
+    }
+    @media (max-width: 640px) {
+      margin-top: 150px;
+    }
+  }
+  &__tabs {
+    display: flex;
+    gap: 40px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  &__tabs {
+    margin-bottom: 60px;
+  }
+  &__flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    span {
+      font-size: 25px;
+    }
+    & > div {
+      flex: 1 1 auto;
+      input {
+        border-bottom: 1px solid black;
+        font-size: 25px;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: right;
+        &::placeholder {
+          color: black;
+        }
+      }
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 130px;
+    align-items: flex-end;
+    & > div {
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

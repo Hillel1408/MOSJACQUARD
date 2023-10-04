@@ -17,6 +17,7 @@
   border-radius: 30px;
   color: white;
   transition: 0.3s;
+  width: fit-content;
   &:hover {
     background-color: #7e134e;
   }
@@ -40,3 +41,4 @@
 @import "./sections/products-intro";
 @import "./sections/product-items";
 @import "./sections/order-intro";
+@import "./sections/personal-account";
