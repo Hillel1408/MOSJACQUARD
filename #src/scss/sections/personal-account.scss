@@ -35,6 +35,9 @@
     @media (max-width: 1700px) {
       background-position: center;
     }
+    @media (max-width: 1024px) {
+      background-position: 0 -130px;
+    }
   }
   &__content {
     min-height: 600px;
@@ -60,6 +63,12 @@
     gap: 40px;
     font-size: 25px;
     line-height: 34px;
+    li {
+      cursor: pointer;
+      &.active {
+        text-decoration: underline;
+      }
+    }
   }
   &__tabs {
     margin-bottom: 60px;
@@ -99,6 +108,40 @@
     }
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
+    }
+  }
+  &__table {
+    overflow: auto;
+  }
+}
+.tabs-block {
+  display: none;
+  &.active {
+    display: grid;
+  }
+  table {
+    border-collapse: collapse;
+    min-width: 800px;
+    tr {
+      th {
+        background-color: #e5007e;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        text-transform: uppercase;
+        border: 1px solid black;
+        span {
+          text-transform: lowercase;
+        }
+      }
+      td {
+        padding: 10px;
+        font-size: 25px;
+        border: 1px solid black;
+        svg {
+          width: 32px;
+        }
+      }
     }
   }
 }

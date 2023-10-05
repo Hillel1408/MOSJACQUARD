@@ -105,6 +105,12 @@ h6 {
   line-height: 20px;
   background-color: #e5007e;
   padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 52px;
   border-radius: 30px;
   color: white;
@@ -129,6 +135,10 @@ h6 {
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -547,12 +557,6 @@ h6 {
     gap: 30px;
   }
 }
-.footer__container h2 {
-  color: white;
-  font-size: 17px;
-  line-height: 14px;
-  margin-bottom: 20px;
-}
 .footer__container a {
   color: white;
 }
@@ -658,10 +662,16 @@ h6 {
 .footer a:hover svg {
   fill: #e5007e;
 }
+.footer__title {
+  color: white;
+  font-size: 17px;
+  line-height: 14px;
+  margin-bottom: 20px;
+}
 
 .about-us {
-  padding-top: 100px;
-  padding-bottom: 120px;
+  margin-top: 100px;
+  margin-bottom: 120px;
 }
 .about-us__text {
   display: -webkit-box;
@@ -947,10 +957,10 @@ h6 {
   min-width: 280px;
   padding: 0 15px;
 }
-.one-item-intro__content h2 {
+.one-item-intro__content h1 {
   margin-bottom: 100px;
 }
-.one-item-intro__content h3 {
+.one-item-intro__content h2 {
   margin: 40px 0;
 }
 .one-item-intro__content ul {
@@ -1030,6 +1040,11 @@ h6 {
     background-position: center;
   }
 }
+@media (max-width: 1024px) {
+  .personal-account-intro {
+    background-position: 0 -130px;
+  }
+}
 .personal-account__content {
   min-height: 600px;
   margin-top: 300px;
@@ -1062,6 +1077,12 @@ h6 {
   gap: 40px;
   font-size: 25px;
   line-height: 34px;
+}
+.personal-account__tabs li {
+  cursor: pointer;
+}
+.personal-account__tabs li.active {
+  text-decoration: underline;
 }
 .personal-account__tabs {
   margin-bottom: 60px;
@@ -1130,4 +1151,38 @@ h6 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+}
+.personal-account__table {
+  overflow: auto;
+}
+
+.tabs-block {
+  display: none;
+}
+.tabs-block.active {
+  display: -ms-grid;
+  display: grid;
+}
+.tabs-block table {
+  border-collapse: collapse;
+  min-width: 800px;
+}
+.tabs-block table tr th {
+  background-color: #e5007e;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+.tabs-block table tr th span {
+  text-transform: lowercase;
+}
+.tabs-block table tr td {
+  padding: 10px;
+  font-size: 25px;
+  border: 1px solid black;
+}
+.tabs-block table tr td svg {
+  width: 32px;
 }

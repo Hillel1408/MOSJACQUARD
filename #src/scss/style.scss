@@ -13,6 +13,8 @@
   line-height: 20px;
   background-color: #e5007e;
   padding: 0 40px;
+  display: flex;
+  align-items: center;
   height: 52px;
   border-radius: 30px;
   color: white;
@@ -31,6 +33,9 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 @import "./sections/header";
