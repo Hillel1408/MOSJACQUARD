@@ -10,30 +10,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header class="header container">
-  <div>
-    <ul>
-      <li><a href="#">Резинки</a></li>
-      <li><a href="#">Ленты</a></li>
-      <li><a href="#">Стропы</a></li>
-      <li><a href="#">Шнуры</a></li>
-      <li><a href="#">Канты</a></li>
-      <li><a href="#">В наличии</a></li>
-      <li><a href="#">Контакты</a></li>
-      <li><a href="#">Личный кабинет</a></li>
-    </ul>
-    <button class="close-mobile-menu"><img src="./img/11.svg" alt="" /></button>
+    <header class="personal-account__header">
+  <div class="header container">
+    <div>
+      <ul>
+        <li><a href="#">Резинки</a></li>
+        <li><a href="#">Ленты</a></li>
+        <li><a href="#">Стропы</a></li>
+        <li><a href="#">Шнуры</a></li>
+        <li><a href="#">Канты</a></li>
+        <li><a href="#">В наличии</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+      </ul>
+      <button class="close-mobile-menu">
+        <img src="./img/11.svg" alt="" />
+      </button>
+    </div>
   </div>
 </header>
- <div class="intro">
-  <div class="container products-intro__container">
+
+    <div class="intro personal-account-intro">
+  <div class="container products-intro__container personal-account__container">
     <div>
-      <div class="intro__image"><img src="./img/logo.svg" alt="" /></div>
+      <div class="intro__image"><img src="./img/footer-logo.svg" alt="" /></div>
       <div>
         <div class="intro__mobile-image">
           <img src="./img/footer-logo.svg" alt="" />
         </div>
-        <a class="footer__tel products-intro__tel" href="tel:+7(800)200-50-80">
+        <a
+          class="footer__tel personal-account__tel"
+          href="tel:+7(800)200-50-80"
+        >
           <svg viewBox="0 0 13.36 20.21">
             <path
               class="cls-1"
@@ -43,7 +51,7 @@
         </a>
         <button class="btn">ЗАКАЗАТЬ ЗВОНОК</button>
       </div>
-      <ul class="intro__icons">
+      <ul class="intro__icons personal-account__icons">
         <li>
           <a href="#"
             ><svg viewBox="0 0 32.5 32.52">
@@ -83,160 +91,91 @@
         </li>
       </ul>
     </div>
-    <div class="one-item-intro__flex">
-      <div class="one-item-intro__img">
-        <img src="img/img-1.jpg" alt="" />
-      </div>
-      <div class="one-item-intro__content">
-        <h1>Резинка 2 в наличии</h1>
-        <span>цена: 1500 руб.</span>
+    <div class="personal-account__content">
+      <h1>Личный кабинет</h1>
+      <ul class="personal-account__tabs">
+        <li data-id="1" class="tabs-item active">Профиль</li>
+        <li data-id="2" class="tabs-item">История заказов</li>
+      </ul>
+      <div class="personal-account__grid tabs-block active" data-id="1">
         <div>
-          <h2>характеристики:</h2>
-          <ul>
-            <li>ширина, мм: 20</li>
-            <li>Цвет: черный</li>
-            <li>Вид резинки: Вязаная</li>
-          </ul>
-        </div>
-        <form action="">
-          <h2>заказать</h2>
-          <div class="one-item-intro__input">
-            <span>длина, м:</span>
-            <input />
+          <div class="personal-account__flex">
+            <span>Имя:</span>
+            <div><input type="text" placeholder="ИВАН" /></div>
           </div>
-          <button class="btn" type="submit">в корзину</button>
-        </form>
+          <div class="personal-account__flex">
+            <span>Телефон:</span>
+            <div><input type="text" placeholder="89031565566" /></div>
+          </div>
+          <div class="personal-account__flex">
+            <span>Новый пароль:</span>
+            <div><input type="password" placeholder="" /></div>
+          </div>
+          <div class="personal-account__flex">
+            <span>Повторите пароль:</span>
+            <div><input type="password" placeholder="" /></div>
+          </div>
+        </div>
+        <button class="btn">Сохранить</button>
+      </div>
+      <div class="tabs-block personal-account__table" data-id="2">
+        <table>
+          <tr>
+            <th>Номер</th>
+            <th>Дата</th>
+            <th>Наименование</th>
+            <th>ширина, <span>мм.</span></th>
+            <th>длина, <span>мм.</span></th>
+            <th>макет</th>
+            <th>сумма, <span>руб.</span></th>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>15.02.2023</td>
+            <td>Резинки</td>
+            <td>50</td>
+            <td>200</td>
+            <td>
+              <a href="#">
+                <svg viewBox="0 0 32.52 32.5">
+                  <path
+                    d="m20.33,31.96c0-.08-.02-.16-.02-.24,0-.77,0-1.55,0-2.32,0-.17.06-.24.21-.29,3.85-1.34,6.61-3.89,8.23-7.63,1.13-2.62,1.34-5.35.73-8.14-.7-3.17-2.36-5.75-4.91-7.76-1.48-1.17-3.13-2-4.96-2.44-3.62-.88-7.07-.42-10.29,1.49-2.76,1.65-4.71,4.01-5.81,7.03-.98,2.7-1.07,5.46-.3,8.24.72,2.6,2.12,4.78,4.14,6.55,1.33,1.17,2.84,2.06,4.53,2.62.26.09.33.21.32.47-.02.72,0,1.43,0,2.15,0,.09,0,.17-.01.26C5.9,30.49-.37,24.2.02,15.51.4,7.01,7.31.3,15.66.01c8.89-.31,16.04,6.45,16.79,14.71.81,9.01-5.54,15.67-12.11,17.24Z"
+                  />
+                  <path
+                    d="m17.61,15.99v16.51h-2.69v-16.49c-1.04,1.05-2.06,2.07-3.06,3.08-.67-.68-1.3-1.31-1.91-1.93,2.09-2.1,4.21-4.21,6.31-6.32,2.1,2.1,4.21,4.22,6.32,6.33-.61.6-1.24,1.23-1.91,1.89-.99-.99-2-2.01-3.05-3.07Z"
+                  />
+                </svg>
+              </a>
+            </td>
+            <td>50 000</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>15.02.2023</td>
+            <td>Резинки</td>
+            <td>50</td>
+            <td>200</td>
+            <td>
+              <a href="#">
+                <svg viewBox="0 0 32.52 32.5">
+                  <path
+                    d="m20.33,31.96c0-.08-.02-.16-.02-.24,0-.77,0-1.55,0-2.32,0-.17.06-.24.21-.29,3.85-1.34,6.61-3.89,8.23-7.63,1.13-2.62,1.34-5.35.73-8.14-.7-3.17-2.36-5.75-4.91-7.76-1.48-1.17-3.13-2-4.96-2.44-3.62-.88-7.07-.42-10.29,1.49-2.76,1.65-4.71,4.01-5.81,7.03-.98,2.7-1.07,5.46-.3,8.24.72,2.6,2.12,4.78,4.14,6.55,1.33,1.17,2.84,2.06,4.53,2.62.26.09.33.21.32.47-.02.72,0,1.43,0,2.15,0,.09,0,.17-.01.26C5.9,30.49-.37,24.2.02,15.51.4,7.01,7.31.3,15.66.01c8.89-.31,16.04,6.45,16.79,14.71.81,9.01-5.54,15.67-12.11,17.24Z"
+                  />
+                  <path
+                    d="m17.61,15.99v16.51h-2.69v-16.49c-1.04,1.05-2.06,2.07-3.06,3.08-.67-.68-1.3-1.31-1.91-1.93,2.09-2.1,4.21-4.21,6.31-6.32,2.1,2.1,4.21,4.22,6.32,6.33-.61.6-1.24,1.23-1.91,1.89-.99-.99-2-2.01-3.05-3.07Z"
+                  />
+                </svg>
+              </a>
+            </td>
+            <td>50 000</td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
 </div>
 
-    <section class="container about-us" id="product-items">
-  <h1 class="title about-us__title">Резинки</h1>
-  <div class="product-items__grid">
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-5.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-6.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-2.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-3.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-4.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-5.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-6.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-2.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-3.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-4.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-5.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-6.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-2.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-3.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-4.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-5.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-6.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-2.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-3.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-    <div>
-      <div class="products-intro__grid-image">
-        <img src="./img/img-4.jpg" alt="" />
-      </div>
-      <a href="#">Наименование товара</a>
-    </div>
-  </div>
-</section>
- <footer class="footer">
+    <footer class="footer">
   <div class="container footer__container">
     <div>
       <p class="footer__title">ПРОДУКЦИЯ</p>
@@ -309,5 +248,24 @@
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const tabsItems = document.querySelectorAll(".tabs-item");
+      const tabsBlock = document.querySelectorAll(".tabs-block");
+
+      for (let elem of tabsItems) {
+        elem.addEventListener("click", function () {
+          for (let elem of tabsItems) {
+            elem.classList.remove("active");
+          }
+          this.classList.add("active");
+          for (let elem of tabsBlock) {
+            elem.classList.remove("active");
+            if (this.dataset.id == elem.dataset.id) {
+              elem.classList.add("active");
+            }
+          }
+        });
+      }
+    </script>
   </body>
 </html>
