@@ -1186,3 +1186,116 @@ html {
 .tabs-block table tr td svg {
   width: 32px;
 }
+
+.contacts {
+  background-image: inherit;
+}
+.contacts img {
+  width: 100%;
+}
+.contacts__block {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contacts__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+@media (max-width: 1024px) {
+  .contacts__grid {
+    gap: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .contacts__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .contacts__grid > div:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+.contacts__grid input {
+  height: 40px;
+  border: 1px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 20px;
+}
+.contacts__grid label {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr;
+  grid-template-columns: 100px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.contacts__grid label:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts__grid h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.contacts h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.contacts textarea {
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 10px;
+  height: 240px;
+}
+.contacts__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  gap: 150px;
+}
+@media (max-width: 640px) {
+  .contacts__flex {
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.contacts__flex p {
+  font-size: 22px;
+}
+.contacts__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  font-size: 23px;
+  margin-top: 80px;
+}
