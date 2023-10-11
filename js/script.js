@@ -18,3 +18,17 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const thumbs = new Swiper(".intro__content-thumbs", {
+  slidesPerView: 4,
+  width: 500,
+});
+
+const slider = new Swiper(".intro__content-slider", {
+  thumbsContainerClass: "intro__content-thumbs-wrapper",
+  swiper: "intro__content-thumbs",
+  multipleActiveThumbs: true,
+  thumbs: { swiper: thumbs },
+});
+
+slider.init();
