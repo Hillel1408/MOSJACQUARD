@@ -154,6 +154,320 @@
       }
     }
   }
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 245px 0 40px 0;
+    gap: 40 / 1270 * 100%;
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      gap: 40px;
+      padding-top: 0;
+      margin: 0 -15px;
+    }
+    &-title {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      &-big {
+        margin-bottom: 100px;
+      }
+    }
+    &-item-1 {
+      width: 768 / 1270 * 100%;
+      @media (max-width: 1100px) {
+        width: 100%;
+      }
+    }
+    &-slider,
+    &-image {
+      width: 100%;
+      margin-right: initial;
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      z-index: 1;
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+    &-image {
+      padding: 75px 0 0;
+    }
+    &-slider {
+      padding: 220px 0 0;
+      @media (max-width: 1100px) {
+        padding-top: 100px;
+      }
+    }
+    &-thumbs {
+      width: 100%;
+      padding: 75px 0 0;
+      margin-right: initial;
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      z-index: 1;
+      display: block;
+      @media (max-width: 1100px) {
+        padding: 0 15px;
+      }
+      &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+      }
+      &-slide {
+        width: 20%;
+        height: 130px;
+        img {
+          width: 100%;
+          height: 130px;
+        }
+      }
+    }
+    &-item-2 {
+      color: white;
+      font-size: 25px;
+      text-transform: uppercase;
+      width: 462 / 1270 * 100%;
+      @media (max-width: 1100px) {
+        width: fit-content;
+        padding: 0 15px;
+      }
+    }
+    &-row {
+      display: flex;
+      gap: 81px;
+      @media (max-width: 1100px) {
+        gap: 30px;
+      }
+      &-title {
+        text-transform: uppercase;
+        font-size: 1.17rem;
+        margin-bottom: 40px;
+      }
+    }
+    &-radios {
+      max-width: 215px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 70px;
+      &__item {
+        background-color: #fff;
+        border: 1px solid #fff;
+        position: relative;
+        input {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+        input[type="radio"]:checked + div {
+          border: 2px solid #0047a3;
+        }
+        div {
+          background-color: inherit;
+          border: none;
+          width: 30px;
+          height: 30px;
+        }
+        &--1 {
+          background-color: #3c2715;
+        }
+        &--2 {
+          background-color: #b0ac87;
+        }
+        &--3 {
+          background-color: #a1151e;
+        }
+        &--4 {
+          background-color: #187e55;
+        }
+        &--5 {
+          background-color: #103e34;
+        }
+        &--6 {
+          background-color: #d56d80;
+        }
+        &--7 {
+          background-color: #5a5a67;
+        }
+        &--8 {
+          background-color: #4b0113;
+        }
+        &--9 {
+          background-color: #c9b7a3;
+        }
+        &--10 {
+          background-color: #383522;
+        }
+        &--11 {
+          background-color: #2b2a30;
+        }
+        &--12 {
+          background-color: #0047a3;
+        }
+        &--13 {
+          background-color: #eab72d;
+        }
+        &--14 {
+          background-color: #ce6a19;
+        }
+        &--15 {
+          background-color: #ad8dc4;
+        }
+        &--16 {
+          background-color: #ab3458;
+        }
+        &--17 {
+          background-color: #000000;
+        }
+      }
+    }
+    &-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      text-transform: initial;
+      & + & {
+        margin-top: 20px;
+      }
+      &-fileUpload {
+        display: inline-flex;
+        flex-wrap: wrap;
+        @media (max-width: 768px) {
+          display: grid;
+        }
+      }
+      span {
+        text-transform: uppercase;
+      }
+      &-fileUpload {
+        input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+          pointer-events: none;
+        }
+        svg {
+          width: 32px;
+          height: 32px;
+          fill: white;
+        }
+      }
+      input {
+        width: 100px;
+        height: 35px;
+        padding: 0 10px;
+        background: black;
+        border: 1px solid white;
+        color: white;
+        @media (max-width: 768px) {
+          width: 50px;
+        }
+      }
+      &-big {
+        max-width: 460px;
+        input {
+          width: 255px;
+          @media (max-width: 1366px) {
+            width: 100px;
+          }
+        }
+      }
+    }
+    &-btn {
+      margin-top: 80px;
+      max-width: 298px;
+      width: 100%;
+      justify-content: center;
+    }
+    &-inputs {
+      &-title {
+        text-transform: initial;
+        font-size: 1.17rem;
+        margin-bottom: 20px;
+        span {
+          text-transform: uppercase;
+        }
+      }
+      &-row {
+        display: flex;
+        align-self: center;
+        .intro__content-label + .intro__content-label {
+          margin-top: 0;
+          margin-left: 40px;
+          @media (max-width: 768px) {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    &-checkbox {
+      flex-direction: column;
+      margin-bottom: 35px;
+      max-width: 215px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      &__item {
+        background: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+        input {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+        div {
+          width: 20px;
+          height: 20px;
+          background-color: #000000;
+          border: 1px solid #fff;
+          margin-right: 10px;
+        }
+        input:checked + div {
+          border: 2px solid #0047a3;
+        }
+        &--arrow {
+          div {
+            background-color: initial;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          svg {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+    &-groups-btns {
+      display: flex;
+      gap: 50px;
+      button {
+        max-width: auto;
+        width: auto;
+      }
+    }
+    &-stock {
+      .intro__content {
+        &-row {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
 }
 .swiper {
   width: 850px;
