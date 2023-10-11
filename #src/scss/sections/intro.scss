@@ -384,6 +384,9 @@
       max-width: 298px;
       width: 100%;
       justify-content: center;
+      @media (max-width: 768px) {
+        margin-top: 0;
+      }
     }
     &-inputs {
       &-title {
@@ -458,6 +461,11 @@
       button {
         max-width: auto;
         width: auto;
+      }
+      @media (max-width: 768px) {
+        margin-top: 40px;
+        gap: 20px;
+        flex-direction: column;
       }
     }
     &-stock {

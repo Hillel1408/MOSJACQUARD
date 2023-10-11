@@ -724,6 +724,11 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 768px) {
+  .intro__content-btn {
+    margin-top: 0;
+  }
+}
 .intro__content-inputs-title {
   text-transform: initial;
   font-size: 1.17rem;
@@ -818,6 +823,16 @@ html {
 .intro__content-groups-btns button {
   max-width: auto;
   width: auto;
+}
+@media (max-width: 768px) {
+  .intro__content-groups-btns {
+    margin-top: 40px;
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .intro__content-stock .intro__content-row {
   margin-top: 50px;
