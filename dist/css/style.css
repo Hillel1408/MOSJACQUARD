@@ -1575,6 +1575,19 @@ html {
 }
 .tabs-block table tr td svg {
   width: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.tabs-block table tr td svg:hover {
+  fill: #e5007e;
+}
+.tabs-block table tr:last-child td:last-child svg {
+  stroke: #000;
+  cursor: pointer;
+  stroke-width: 2px;
+}
+.tabs-block table tr:last-child td:last-child svg:hover {
+  stroke: #e5007e;
 }
 
 .contacts {

@@ -140,6 +140,22 @@
         border: 1px solid black;
         svg {
           width: 22px;
+          transition: 0.3s;
+          &:hover {
+            fill: #e5007e;
+          }
+        }
+      }
+      &:last-child {
+        td:last-child {
+          svg {
+            stroke: #000;
+            cursor: pointer;
+            stroke-width: 2px;
+            &:hover {
+              stroke: #e5007e;
+            }
+          }
         }
       }
     }
