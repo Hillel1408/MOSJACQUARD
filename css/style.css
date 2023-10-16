@@ -588,6 +588,7 @@ html {
   width: 100%;
   height: 100%;
   opacity: 0;
+  cursor: pointer;
 }
 .intro__content-radios__item input[type=radio]:checked + div {
   border: 2px solid #0047a3;
@@ -597,6 +598,11 @@ html {
   border: none;
   width: 30px;
   height: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.intro__content-radios__item:hover div {
+  background-color: RGBA(0, 0, 0, 0.7);
 }
 .intro__content-radios__item--1 {
   background-color: #3c2715;
@@ -677,6 +683,14 @@ html {
     display: -ms-grid;
     display: grid;
   }
+}
+.intro__content-label-fileUpload svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.intro__content-label-fileUpload svg:hover {
+  cursor: pointer;
+  fill: #e5007e;
 }
 .intro__content-label span {
   text-transform: uppercase;
@@ -786,6 +800,7 @@ html {
   width: 100%;
   height: 100%;
   opacity: 0;
+  cursor: pointer;
 }
 .intro__content-checkbox__item div {
   width: 20px;
@@ -796,6 +811,9 @@ html {
 }
 .intro__content-checkbox__item input:checked + div {
   border: 2px solid #0047a3;
+}
+.intro__content-checkbox__item--arrow {
+  cursor: pointer;
 }
 .intro__content-checkbox__item--arrow div {
   background-color: initial;
@@ -1575,6 +1593,19 @@ html {
 }
 .tabs-block table tr td svg {
   width: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.tabs-block table tr td svg:hover {
+  fill: #e5007e;
+}
+.tabs-block table tr:last-child td:last-child svg {
+  stroke: #000;
+  cursor: pointer;
+  stroke-width: 2px;
+}
+.tabs-block table tr:last-child td:last-child svg:hover {
+  stroke: #e5007e;
 }
 
 .contacts {
