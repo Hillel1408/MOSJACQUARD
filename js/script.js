@@ -29,6 +29,10 @@ const slider = new Swiper(".intro__content-slider", {
   swiper: "intro__content-thumbs",
   multipleActiveThumbs: true,
   thumbs: { swiper: thumbs },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 slider.init();
