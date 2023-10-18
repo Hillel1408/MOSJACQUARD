@@ -1118,6 +1118,12 @@ html {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media (max-width: 450px) {
+  .advantages ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 .advantages ul li {
   position: relative;
   -webkit-transition: 0.3s;
