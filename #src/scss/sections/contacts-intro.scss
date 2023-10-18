@@ -68,6 +68,13 @@
     }
     p {
       font-size: 22px;
+      a {
+        color: black;
+        transition: 0.3s;
+        &:hover {
+          color: #e5007e;
+        }
+      }
     }
   }
   &__links {

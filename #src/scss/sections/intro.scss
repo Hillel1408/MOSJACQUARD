@@ -510,6 +510,12 @@
       font-size: 30px;
     }
   }
+  &-button-prev {
+    left: 0;
+  }
+  &-button-next {
+    right: 0;
+  }
   img {
     width: 100%;
   }

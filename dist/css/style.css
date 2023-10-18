@@ -875,6 +875,12 @@ html {
 .swiper-button-prev:after, .swiper-button-next:after {
   font-size: 30px;
 }
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
+}
 .swiper img {
   width: 100%;
 }
@@ -1116,6 +1122,12 @@ html {
   .advantages ul {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 450px) {
+  .advantages ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 .advantages ul li {
@@ -1730,6 +1742,14 @@ html {
 }
 .contacts__flex p {
   font-size: 22px;
+}
+.contacts__flex p a {
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contacts__flex p a:hover {
+  color: #e5007e;
 }
 .contacts__links {
   display: -webkit-box;
