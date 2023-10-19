@@ -14,5 +14,29 @@
     @@include('./html/product-items-3.html') @@include('./html/footer.html')
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const colors = document.querySelectorAll(".color");
+      const colorsBtn = document.querySelector(".colors-btn p");
+      const svg = document.querySelector(".colors-btn svg");
+      let flag = true;
+
+      colorsBtn.addEventListener("click", () => {
+        if (flag) {
+          colors.forEach((item, index) => {
+            if (index > 4) item.style.display = "flex";
+          });
+          colorsBtn.innerText = "Скрыть";
+          flag = false;
+          svg.style.transform = "rotate(180deg)";
+        } else {
+          colors.forEach((item, index) => {
+            if (index > 4) item.style.display = "none";
+          });
+          colorsBtn.innerText = "Еще";
+          flag = true;
+          svg.style.transform = "none";
+        }
+      });
+    </script>
   </body>
 </html>
