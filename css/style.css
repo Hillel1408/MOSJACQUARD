@@ -856,6 +856,10 @@ html {
   margin-top: 50px;
 }
 
+.color:nth-child(n+6) {
+  display: none;
+}
+
 .swiper {
   width: 850px;
   padding: 0 20px;
