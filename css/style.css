@@ -441,10 +441,13 @@ html {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.intro__list li svg path {
+  fill: white;
+}
 .intro__list li:hover a {
   color: #e5007e;
 }
-.intro__list li:hover svg {
+.intro__list li:hover svg path {
   fill: #e5007e;
 }
 .intro__content {
@@ -1011,11 +1014,11 @@ html {
 }
 .footer__tel svg {
   width: 20px;
-  fill: white;
 }
 .footer__tel svg path {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  fill: white;
 }
 .footer__tel:hover {
   color: #e5007e;
@@ -1034,6 +1037,11 @@ html {
 }
 .footer__text svg {
   width: 15px;
+}
+.footer__text svg path {
+  fill: white;
+}
+.footer__text svg polygon {
   fill: white;
 }
 .footer__contacts {
