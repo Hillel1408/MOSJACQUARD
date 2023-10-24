@@ -143,12 +143,15 @@
         fill: white;
         width: 38px;
         transition: 0.3s;
+        path {
+          fill: white;
+        }
       }
       &:hover {
         a {
           color: #e5007e;
         }
-        svg {
+        svg path {
           fill: #e5007e;
         }
       }

@@ -74,9 +74,9 @@
     transition: 0.3s;
     svg {
       width: 20px;
-      fill: white;
       path {
         transition: 0.3s;
+        fill: white;
       }
     }
     &:hover {
@@ -96,7 +96,12 @@
     color: white;
     svg {
       width: 15px;
-      fill: white;
+      path {
+        fill: white;
+      }
+      polygon {
+        fill: white;
+      }
     }
   }
   &__contacts {
