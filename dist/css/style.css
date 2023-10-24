@@ -33,7 +33,7 @@ section {
 html,
 body {
   height: 100%;
-  min-width: 320px;
+  min-width: 380px;
   cursor: default;
 }
 
@@ -1774,4 +1774,155 @@ html {
 }
 .contacts__links a:hover {
   color: #e5007e;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal.active {
+  opacity: 100;
+  visibility: visible;
+}
+.modal h2 {
+  font-size: 37px;
+  margin-bottom: 30px;
+}
+.modal__content {
+  width: 900px;
+  padding: 80px 120px;
+  background-color: white;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .modal__content {
+    padding: 40px;
+  }
+}
+.modal__registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.modal__registration button {
+  margin-left: auto;
+}
+.modal__registration > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.modal input {
+  border-bottom: 1px solid black;
+  height: 30px;
+}
+.modal input::-webkit-input-placeholder {
+  font-size: 22px;
+  color: black;
+  font-weight: 400;
+}
+.modal input::-moz-placeholder {
+  font-size: 22px;
+  color: black;
+  font-weight: 400;
+}
+.modal input:-ms-input-placeholder {
+  font-size: 22px;
+  color: black;
+  font-weight: 400;
+}
+.modal input::-ms-input-placeholder {
+  font-size: 22px;
+  color: black;
+  font-weight: 400;
+}
+.modal input::placeholder {
+  font-size: 22px;
+  color: black;
+  font-weight: 400;
+}
+.modal__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  background-color: transparent;
+}
+.modal__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .modal__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.modal__grid svg {
+  width: 50px;
+}
+.modal__grid svg path {
+  fill: #009ee2;
+  stroke: #009ee2;
+}
+.modal__grid > button {
+  width: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 0;
+}
+.modal__grid > button:first-child {
+  background-color: #009ee2;
+}
+.modal__grid > button:first-child:hover {
+  background-color: #00577c;
+}
+.modal__cart-grid button {
+  width: 350px;
+}
+.modal p {
+  font-size: 26px;
+}
+.modal ul {
+  margin: 70px 0;
+}
+.modal ul li {
+  font-size: 26px;
+}
+@media (max-width: 1024px) {
+  .modal {
+    width: 100%;
+  }
 }

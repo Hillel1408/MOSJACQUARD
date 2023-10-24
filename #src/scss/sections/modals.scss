@@ -1,0 +1,105 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease 0s;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  &.active {
+    opacity: 100;
+    visibility: visible;
+  }
+  h2 {
+    font-size: 37px;
+    margin-bottom: 30px;
+  }
+  &__content {
+    width: 900px;
+    padding: 80px 120px;
+    background-color: white;
+    position: relative;
+    @media (max-width: 768px) {
+      padding: 40px;
+    }
+  }
+  &__registration {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    button {
+      margin-left: auto;
+    }
+    & > label {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  input {
+    border-bottom: 1px solid black;
+    height: 30px;
+    &::placeholder {
+      font-size: 22px;
+      color: black;
+      font-weight: 400;
+    }
+  }
+  &__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    background-color: transparent;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    gap: 20px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+    svg {
+      width: 50px;
+      path {
+        fill: #009ee2;
+        stroke: #009ee2;
+      }
+    }
+    & > button {
+      width: 300px;
+      justify-content: center;
+      margin-left: 0;
+      &:first-child {
+        background-color: #009ee2;
+        &:hover {
+          background-color: darken($color: #009ee2, $amount: 20);
+        }
+      }
+    }
+  }
+  &__cart-grid {
+    button {
+      width: 350px;
+    }
+  }
+  p {
+    font-size: 26px;
+  }
+  ul {
+    margin: 70px 0;
+    li {
+      font-size: 26px;
+    }
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
